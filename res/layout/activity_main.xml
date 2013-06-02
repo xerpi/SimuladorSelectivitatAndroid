@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            android:id="@+id/trBatx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvBatx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left"
+                android:text="Nota batxillerat" />
+
+            <EditText
+                android:id="@+id/etBatx"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="5" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trCatala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvCatala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left"
+                android:text="Català" />
+
+            <EditText
+                android:id="@+id/etCatala"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="5" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trCastella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvCastella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left"
+                android:text="Castellà" />
+
+            <EditText
+                android:id="@+id/etCastella"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="5" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trAngles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvAngles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left"
+                android:text="Anglès" />
+
+            <EditText
+                android:id="@+id/etAngles"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="5" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trHistoFilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvHistoFilo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left"
+                android:text="Història/Filosofia" />
+
+            <EditText
+                android:id="@+id/etHistoFilo"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+               android:gravity="center_horizontal|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="5" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trOptativa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvOptativa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left"
+                android:text="Optativa" />
+
+            <EditText
+                android:id="@+id/etOptativa"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="5" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trEspec1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvEspec1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left"
+                android:text="Específica 1" />
+
+            <Spinner
+                android:id="@+id/spinnerEspec1"
+        		android:layout_height="wrap_content" 
+         		android:layout_width="fill_parent"/>
+
+            <EditText
+                android:id="@+id/etEspec1"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="5" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trEspec2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvEspec2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left"
+                android:text="Específica 2" />
+
+            <Spinner
+                android:id="@+id/spinnerEspec2"
+        		android:layout_height="wrap_content" 
+         		android:layout_width="fill_parent" />
+
+            <EditText
+                android:id="@+id/etEspec2"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="28dp"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:inputType="numberDecimal"
+                android:maxLength="5" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/tvNotaComuna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonCalcular"
+        android:text="@string/stringNotaComuna" />
+
+    <TextView
+        android:id="@+id/tvNotaFinalPAU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNotaComuna"
+        android:layout_below="@+id/tvNotaComuna"
+        android:text="@string/stringNotaFinalPAU" />
+
+</RelativeLayout>

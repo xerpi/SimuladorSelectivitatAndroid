@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simulador nota selectivitat</string>
+    <string name="stringNotaComuna">Nota part comuna</string>
+    <string name="stringNotaFinalPAU">Nota final PAU</string>
+    
+    <string-array name="ponderacions_array">
+        <item>0.1</item>
+        <item>0.2</item>
+    </string-array>
+
+</resources>
